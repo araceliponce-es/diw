@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+
+
+  <div style="display: grid; gap:2rem; padding: 2rem;">
+
+    <p>https://tanayakhadke.com/?ref=lapaninja</p>
+
+    <ul class="list">
+
+      <div class="card">
+        <img src="./una-imagen.png" alt="">
+        <h2 class="card__title">el titulo de la tarjeta</h2>
+      </div>
+      <div class="card">
+        <img src="./una-imagen.png" alt="">
+      </div>
+      <div class="card">
+        <img src="./una-imagen.png" alt="">
+      </div>
+      <div class="card">
+        <img src="./una-imagen.png" alt="">
+      </div>
+      <div class="card">
+        <img src="./una-imagen.png" alt="">
+      </div>
+
+    </ul>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .list {
+        --w-col: min(100%, 300px);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(var(--w-col), 1fr));
+        gap: 3rem;
+      }
+
+      .card {
+        background-color: rgb(250, 214, 250);
+        border-radius: 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+
+
+      .card__title {
+        position: absolute;
+        bottom: 0;
+        /*   isolation: isolate; */
+        opacity: 0;
+        text-align: center;
+        line-height: .8em;
+        padding-inline: 1.5rem;
+        height: 2em;
+        color: rgb(106, 68, 241);
+
+      }
+
+      .card img {
+        width: 100%;
+        margin: auto;
+      }
+
+      /* titulo aparece desde abajo, card tiene overflow hidden */
+      .card:hover img {
+        scale: .6;
+        transform: translate(0, -1rem);
+      }
+
+      .card__title {
+        transform: translate(0, 1rem);
+        transition: transform .1s ease-out;
+
+      }
+
+      .card:hover .card__title {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 2rem;
+        transition: scale.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+    </style>
+
+
+
+
+<div class="square"></div>
+
+<style>
+  .square{
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+  }
+</style>
+
+
+  </div>
 </body>
+
 </html>
