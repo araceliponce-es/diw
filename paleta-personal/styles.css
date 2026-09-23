@@ -27,7 +27,7 @@
   /* ---- 2. COLOR DE FONDO ALTERNO ----
      Para secciones que quieres diferenciar del fondo general
      (ver clase .seccion--alterna en el HTML). */
-  --color-fondo-alterno: #8ab63b;
+  --color-fondo-alterno: gold;
 
   /* ---- 3. COLOR DE FONDO DE BLOQUES / TARJETAS ----
      El fondo de las tarjetas de producto y del bloque destacado. */
@@ -43,7 +43,7 @@
   /* ---- 5. COLOR DE BOTONES ----
      Botón primario (la acción principal) y su estado al pasar el ratón,
      más el botón secundario (acción menos importante). */
-  --color-boton-primario: #ff802b;
+  --color-boton-primario: plum;
   --color-boton-primario-hover: #97634a;
   --color-boton-texto: #FFFFFF;
 
@@ -54,7 +54,7 @@
   /* ---- 6. COLOR DE ACENTO ----
      Úsalo con moderación: un detalle, no todo el fondo. Aquí se usa en el
      borde izquierdo del bloque destacado ("aside"). */
-  --color-acento: #712acf;
+  --color-acento: tomato;
 
   /* ---- 7. TIPOGRAFÍA ----
      --font-titulos se usa en h1, h2, h3.
@@ -77,7 +77,7 @@
         recurso (como Arial o Helvetica).
      Si cambias de tipografía, actualiza también el <link> de Google Fonts
      en el <head> de index.html. */
-  --font-titulos: "Bagel Fat One", system-ui;
+  --font-titulos: "Libre Barcode 39", system-ui;
   --font-cuerpo: "DM Sans", sans-serif;
 
 
@@ -221,7 +221,7 @@ p {
    ========================================================================== */
 
 .boton {
-  font-family: var(--font-cuerpo);
+  font-family: var(--font-titulos);
   font-size: 1.25em;
   font-weight: 600;
   padding: 14px 28px;
@@ -262,7 +262,7 @@ p {
 
 .seccion--alterna {
   background-color: var(--color-fondo-alterno);
-  color: rgb(238, 238, 238);
+  color: rgb(51, 51, 51);
 
 
 
