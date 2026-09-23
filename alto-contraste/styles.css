@@ -27,11 +27,11 @@
   /* ---- 2. COLOR DE FONDO ALTERNO ----
      Para secciones que quieres diferenciar del fondo general
      (ver clase .seccion--alterna en el HTML). */
-  --color-fondo-alterno: #202020;
+  --color-fondo-alterno: #8ab63b;
 
   /* ---- 3. COLOR DE FONDO DE BLOQUES / TARJETAS ----
      El fondo de las tarjetas de producto y del bloque destacado. */
-  --color-bloque: #47474794;
+  --color-bloque: #474747;
   --color-bloque-borde: transparent;
   --color-bloque-texto: rgba(255, 255, 255, 0.822);
 
@@ -43,7 +43,7 @@
   /* ---- 5. COLOR DE BOTONES ----
      Botón primario (la acción principal) y su estado al pasar el ratón,
      más el botón secundario (acción menos importante). */
-  --color-boton-primario: #b19264;
+  --color-boton-primario: #ff802b;
   --color-boton-primario-hover: #97634a;
   --color-boton-texto: #FFFFFF;
 
@@ -54,7 +54,7 @@
   /* ---- 6. COLOR DE ACENTO ----
      Úsalo con moderación: un detalle, no todo el fondo. Aquí se usa en el
      borde izquierdo del bloque destacado ("aside"). */
-  --color-acento: #C68A2E;
+  --color-acento: #712acf;
 
   /* ---- 7. TIPOGRAFÍA ----
      --font-titulos se usa en h1, h2, h3.
@@ -122,7 +122,7 @@ h1 {
   font-size: 10vw;
   font-size: clamp(1rem, 10vw + 10px, 12rem);
   font-weight: 700;
-  color: #b17e64;
+  color: #474747;
   letter-spacing: -0.03em;
 }
 
@@ -266,9 +266,9 @@ p {
 
 
 
-  --color-boton-primario: #7a542e;
-  --color-boton-primario-hover: #97634a;
-  --color-boton-texto: #FFFFFF;
+  --color-boton-primario: #f9c52c;
+  --color-boton-primario-hover: #fdd14d;
+  --color-boton-texto: #2c3d10;
 }
 
 .seccion--centrada {
@@ -316,6 +316,7 @@ p {
 /* Bloque destacado (cita), con el color de acento como detalle en el borde */
 .destacado {
   background-color: var(--color-bloque);
+  background-color: transparent;
   border-left: 4px solid var(--color-acento);
   padding: 24px 28px;
   /*   font-family: var(--font-titulos);
@@ -341,7 +342,8 @@ p {
 
 .pie p {
   font-size: 0.875em;
-  margin: 0;
+  margin: auto;
+  width: fit-content;
 }
 
 /* ==========================================================================
